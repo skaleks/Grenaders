@@ -2,23 +2,23 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    private float mouseX;
-    private float mouseY;
-    private float sensitivity = 100f;
-    private float xRotation;
+    private float _mouseX;
+    private float _mouseY;
+    private float _sensitivity = 100f;
+    private float _xRotation;
     [SerializeField]
-    private Transform body;
+    private Transform _body;
 
 
     private void Update()
     {
-        mouseX = Input.GetAxisRaw("Mouse X") * sensitivity * Time.deltaTime;
-        mouseY = Input.GetAxisRaw("Mouse Y") * sensitivity * Time.deltaTime;
+        _mouseX = Input.GetAxisRaw("Mouse X") * _sensitivity * Time.deltaTime;
+        _mouseY = Input.GetAxisRaw("Mouse Y") * _sensitivity * Time.deltaTime;
 
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        _xRotation -= _mouseY;
+        _xRotation = Mathf.Clamp(_xRotation, -90f, 90f);
 
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        body.Rotate(Vector3.up * mouseX);
+        transform.localRotation = Quaternion.Euler(_xRotation, 0f, 0f);
+        _body.Rotate(Vector3.up * _mouseX);
     }
 }

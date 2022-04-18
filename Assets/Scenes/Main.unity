@@ -1183,6 +1183,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 875406005}
+  - component: {fileID: 875406008}
   m_Layer: 0
   m_Name: Environment
   m_TagString: Untagged
@@ -1213,6 +1214,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &875406008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875406004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1b4ccba06e47c348ad76942d8b64087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyList:
+  - {fileID: 7712436486574993539, guid: 7eaebf4242d02b74aab650c6237ea829, type: 3}
+  _enemySpawnLocations:
+  - {x: 4, y: 3.5, z: -19}
+  _bombList:
+  - {fileID: 1723774327357803451, guid: 8d049bea78bc6d64d896a0fbabe2f7aa, type: 3}
+  - {fileID: 797534472768734492, guid: dafdcba7f9700f4408ddf9c740f2ff78, type: 3}
+  - {fileID: 8951890727394572663, guid: 457fe3d8880b62b499990aae62eed505, type: 3}
+  _bombSpawnLocations:
+  - {x: -18, y: 1.5, z: -11}
+  - {x: 4, y: 0.75, z: -13}
+  - {x: 7, y: 0.75, z: 7}
+  - {x: -17, y: 0.75, z: 14}
+  - {x: 12, y: 3, z: 12}
+  - {x: -13, y: 5, z: 23}
+  - {x: 23, y: 5, z: -16}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,7 +1338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4924490289e71a34bb250847c9f4ac9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  body: {fileID: 1546178299}
+  _body: {fileID: 1546178299}
 --- !u!1 &1094636277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,7 +2008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 060be70b5394eed40968fe57efe58224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1546178298}
+  _player: {fileID: 1546178298}
 --- !u!1 &1602146777
 GameObject:
   m_ObjectHideFlags: 0
