@@ -10,6 +10,11 @@ public class CameraMove : MonoBehaviour
     private Transform _body;
 
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     private void Update()
     {
         _mouseX = Input.GetAxisRaw("Mouse X") * _sensitivity * Time.deltaTime;

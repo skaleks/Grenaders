@@ -1,10 +1,9 @@
 using UnityEngine;
-public class BlueBomb : Bomb
+
+public class BlueBomb : MonoBehaviour, IBombable
 {
-    public override Bomb GetInstance()
+    public void Explose()
     {
-        this._size = new Vector3(0.3f, 0.3f, 0.3f);
-        this._color = Color.blue;
-        return this;
+        throw new System.NotImplementedException();
     }
 }

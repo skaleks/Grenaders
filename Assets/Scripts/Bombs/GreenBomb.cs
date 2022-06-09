@@ -1,11 +1,9 @@
 ﻿using UnityEngine;
 
-public class GreenBomb : Bomb
+public class GreenBomb : MonoBehaviour, IBombable
 {
-    public override Bomb GetInstance()
+    public void Explose()
     {
-        this._size = new Vector3(0.3f, 0.3f, 0.3f);
-        this._color = Color.green;
-        return this;
+        throw new System.NotImplementedException();
     }
 }
